@@ -1,0 +1,30 @@
+istream->input
+ostream ->output
+сочат, където влиза информацията /оs/<<"string"
+ostream os;
+
+<istream> е блиблиотеката, за да имаме класовете по-горе
+
+<iostream> -> хем да записваме в потока, хем да четем от него 
+istream -> наследява го ifstream; с него можем да четем от файл
+ifstream file ("text"); за да се направи поток към файла и да започнем да четем от него
+file >>str;
+file.read(buff, 100); 
+file.write(buff, 50); //колко символа искаме да сложим в буфера
+
+<sstream>
+stringstream -> за низове 
+
+Д В О И Ч Н И  Ф А Й Л О В Е
+ofstream file ("binary", ios::out| ios::binary)  //за записване във файл
+file.read(buffer, 100) // 100=колко байта искаме да четем 
+
+file.seekp(100, ios::beg)  // seekP -> P-> put  САМО С ofstream
+     seekg    , ios::cur   //seekG -> G -> get  САМО С ifstream
+              , ios::end
+              
+              Във файл има само един указател, сочи само към една позиция и след като приключи с нея, тогава се мести
+              
+tellg
+tellp ->указатели 
+fstream -> при него няма значение кое ще се използва, защото е и за двете 
