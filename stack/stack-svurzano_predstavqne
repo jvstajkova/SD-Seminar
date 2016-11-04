@@ -1,0 +1,10 @@
+#include<stack>
+using std::stack;
+
+st.top(); - nai-goren element na steka
+stack<int> st;
+st.empty() - proverqva dali e prazen
+st.size(); - razmer 
+st.push(x); - dobavqme element
+int x=5;
+
